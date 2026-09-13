@@ -160,7 +160,7 @@ footer p{color:var(--muted);font-size:13px;}
     </div>
     <div class="hero-stats">
       <div>
-        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-num">6<span>+</span></div>
         <div class="stat-label">Proyectos de Data Science</div>
       </div>
       <div>
@@ -182,7 +182,7 @@ footer p{color:var(--muted);font-size:13px;}
     <div class="about-text reveal">
       <p>Mi carrera comenzó en la <strong>arquitectura</strong>, diseñando planos y supervisando obras donde cada decisión tenía que ser precisa y respaldada por información real de campo.</p>
       <p>Con el tiempo descubrí que lo que más me apasionaba no era el edificio en sí, sino <strong>el análisis detrás de él</strong>: interpretar datos, detectar desviaciones, tomar decisiones basadas en evidencia.</p>
-      <p>Esa revelación me llevó al mundo de la ciencia de datos. Me formé en el bootcamp de <strong>TripleTen</strong>, donde trabajé con Python, SQL, Pandas y SciPy en proyectos reales con datasets complejos.</p>
+      <p>Esa revelación me llevó al mundo de la ciencia de datos. Completé el bootcamp de <strong>TripleTen</strong>, donde trabajé con Python, SQL, modelos de machine learning (LightGBM, CatBoost, XGBoost) y series de tiempo en proyectos reales con datasets complejos.</p>
       <p>Hoy mi meta es contribuir a equipos donde <strong>los datos sean el centro de la toma de decisiones</strong>.</p>
     </div>
     <div class="reveal">
@@ -198,6 +198,9 @@ footer p{color:var(--muted);font-size:13px;}
         <div class="skill-chip">AutoCAD</div>
         <div class="skill-chip">Revit</div>
         <div class="skill-chip">Scikit-learn</div>
+        <div class="skill-chip">LightGBM</div>
+        <div class="skill-chip">CatBoost</div>
+        <div class="skill-chip">XGBoost</div>
       </div>
     </div>
   </div>
@@ -260,6 +263,60 @@ footer p{color:var(--muted);font-size:13px;}
       <div class="project-footer">
         <div class="project-approved">Aprobado por mentor TripleTen</div>
         <a class="btn-code" href="https://github.com/JosueEspino501/data-science-projects/blob/main/proyecto%20sprint%208.ipynb" target="_blank">⟨/⟩ Ver código</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-emoji">🚗</div>
+      <div class="project-tag">Machine Learning · Regresión</div>
+      <h3>Rusty Bargain: Valor de Mercado de Autos Usados</h3>
+      <p>Comparé múltiples modelos de regresión (Random Forest, LightGBM, CatBoost, XGBoost) para predecir el precio de mercado de autos usados a partir de sus especificaciones técnicas, priorizando exactitud y velocidad de inferencia.</p>
+      <div class="project-meta">
+        <div class="project-meta-item"><strong>El reto</strong><span>¿Qué modelo da el mejor balance entre precisión y tiempo de entrenamiento/inferencia?</span></div>
+        <div class="project-meta-item"><strong>Resultado</strong><span>LightGBM seleccionado como mejor opción para producción (RMSE ≈ 1,524).</span></div>
+      </div>
+      <div class="project-tools">
+        <span class="tool-tag">Python</span><span class="tool-tag">Pandas</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">LightGBM</span><span class="tool-tag">CatBoost</span><span class="tool-tag">XGBoost</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-approved">Aprobado por mentor TripleTen</div>
+        <a class="btn-code" href="https://github.com/JosueEspino501/data-science-projects/blob/main/proyecto%20sprint%2015.ipynb" target="_blank">⟨/⟩ Ver código</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-emoji">📉</div>
+      <div class="project-tag">Clasificación · Negocio</div>
+      <h3>Interconnect: Predicción de Fuga de Clientes</h3>
+      <p>Construí un pipeline de clasificación end-to-end integrando datos de contrato, información personal, internet y telefonía para predecir qué clientes de una operadora están en riesgo de cancelar su servicio.</p>
+      <div class="project-meta">
+        <div class="project-meta-item"><strong>El reto</strong><span>Identificar a tiempo a los clientes con mayor riesgo de cancelar, manejando el desequilibrio de clases.</span></div>
+        <div class="project-meta-item"><strong>Resultado</strong><span>AUC-ROC ≈ 0.84 y Recall ≈ 0.80: se identifica ~4 de cada 5 clientes en riesgo para priorizar retención.</span></div>
+      </div>
+      <div class="project-tools">
+        <span class="tool-tag">Python</span><span class="tool-tag">Pandas</span><span class="tool-tag">LightGBM</span><span class="tool-tag">scikit-learn</span><span class="tool-tag">Class Imbalance</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-approved">Aprobado por mentor TripleTen</div>
+        <a class="btn-code" href="https://github.com/JosueEspino501/data-science-projects/blob/main/proyecto%20sprint%2019.ipynb" target="_blank">⟨/⟩ Ver código</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-emoji">📈</div>
+      <div class="project-tag">Series de Tiempo · Forecasting</div>
+      <h3>Sweet Lift Taxi: Demanda por Hora</h3>
+      <p>Diseñé un modelo de forecasting para predecir la demanda de taxis en la próxima hora en aeropuertos, con lags, estadísticas móviles y variables de calendario, respetando el orden temporal de los datos.</p>
+      <div class="project-meta">
+        <div class="project-meta-item"><strong>El reto</strong><span>Anticipar picos de demanda para mejorar la asignación de conductores.</span></div>
+        <div class="project-meta-item"><strong>Resultado</strong><span>LightGBM alcanzó RMSE ≈ 41.6 en test, por debajo del umbral de negocio de 48.</span></div>
+      </div>
+      <div class="project-tools">
+        <span class="tool-tag">Python</span><span class="tool-tag">Pandas</span><span class="tool-tag">LightGBM</span><span class="tool-tag">TimeSeriesSplit</span><span class="tool-tag">Feature Engineering</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-approved">Aprobado por mentor TripleTen</div>
+        <a class="btn-code" href="https://github.com/JosueEspino501/data-science-projects/blob/main/proyecto%20sprint%2016.ipynb" target="_blank">⟨/⟩ Ver código</a>
       </div>
     </div>
 
